@@ -10,7 +10,7 @@ namespace MicroRabbit.Domain.Core.Bus
     public interface IEventHandler<in TEvent> : IEventHandler 
         where TEvent : Event
     {
-        Task Handle<T>(TEvent @event);
+        Task Handle(TEvent @event);
     }
 
     public interface IEventHandler { };
